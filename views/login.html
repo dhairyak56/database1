@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CauseConnect</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CauseConnect</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="events">Find Events</a></li>
+                <li><a href="post-event">Post Event</a></li>
+                <li><a href="faqs">FAQs</a></li>
+                <li><a href="signup" class="sign-up">Sign Up</a></li>
+                <li><a href="login" class="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="login-container">
+        <h2>Login</h2>
+        <p>Welcome back! Please log in to your account.</p>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="form-group remember-me">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button type="submit" class="login-button">Login</button>
+            <div class="or-divider">OR</div>
+            <div class="google-login">
+                <a href="/auth/google" class="btn-google">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google logo">
+                    Login with Google
+                </a>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="signup">Sign Up</a></p>
+    </main>
+    <footer>
+        <section class="subscribe-section">
+            <p>Want to receive event updates?</p>
+            <input type="email" placeholder="Enter your email">
+            <button type="button">Subscribe</button>
+        </section>
+        <section class="footer-content">
+            <div class="footer-info">
+                <p>Email</p>
+                <p><a href="mailto:info@causeconnect.com">info@causeconnect.com</a></p>
+            </div>
+            <div class="footer-links">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="find-events.html">Find Events</a></p>
+                <p><a href="post-event.html">Post Event</a></p>
+                <p><a href="faqs.html">FAQs</a></p>
+                <p><a href="signup.html">Sign Up</a></p>
+                <p><a href="login.html">Login</a></p>
+            </div>
+            <div class="footer-branding">
+                <p class="footer-logo">CauseConnect</p>
+                <p>We help discover, join & engage with volunteering events in various locations of Australia.</p>
+                <div class="footer-social">
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/google-plus.png" alt="Google Plus"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/youtube-play.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </section>
+        <p>© CauseConnect 2024, All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">CauseConnect</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/faqs">FAQs</a></li>
+                <% if (user) { %>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/">Logout</a></li>
+                <% } else { %>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/signup" class="sign-up">Sign Up</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </header>
+    <main class="admin-container">
+        <h1>Admin Panel</h1>
+        <% if (messages.error && messages.error.length > 0) { %>
+            <div class="error-message"><%= messages.error %></div>
+        <% } %>
+        <% if (messages.success && messages.success.length > 0) { %>
+            <div class="success-message"><%= messages.success %></div>
+        <% } %>
+
+        <h2>Manage Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% users.forEach(user => { %>
+                    <tr>
+                        <td><%= user.id %></td>
+                        <td><%= user.email %></td>
+                        <td><%= user.name %></td>
+                        <td><%= user.role %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

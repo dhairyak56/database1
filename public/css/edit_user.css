@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8e1;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff8e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #3498db;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.nav-links .sign-up {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links .sign-up:hover {
+    background-color: #e07b00;
+}
+
+/* Edit User Form Styles */
+.edit-user-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f8e1c1;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-user-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.edit-user-container .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.edit-user-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-user-container input[type="text"],
+.edit-user-container input[type="email"],
+.edit-user-container select {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.edit-user-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    font-size: 16px;
+}
+
+.edit-user-button:hover {
+    background-color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-info,
+.footer-links,
+.footer-branding {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-info p,
+.footer-links p,
+.footer-branding p {
+    margin: 10px 0;
+}
+
+.footer-info a,
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-info a:hover,
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-branding .footer-logo {
+    font-size: 1.5em;
+    color: #3498db;
+}
